@@ -28,7 +28,7 @@
    自动添加
 
    ```json
-   [{"version":2,"title":"Profile 1","headers":[{"enabled":true,"name":"Origin","value":"https://github.com"},{"enabled":true,"name":"referer","value":"https://g.shuia.tk/"}],"urlReplacements":[{"enabled":true,"name":"https://github.com/(.*)","value":"https://g.shuia.tk/$1"}],"urlFilters":[{"enabled":true,"urlRegex":".*://g.shuia.tk/.*"},{"enabled":true,"urlRegex":".*://github.com/.*"}],"shortTitle":"1"}]
+   [{"version":2,"title":"Profile 1","headers":[{"enabled":true,"name":"Origin","value":"https://github.com"},{"enabled":true,"name":"referer","value":"你的github反向代理域名"}],"urlReplacements":[{"enabled":true,"name":"https://github.com/(.*)","value":"你的github反向代理域名/$1"}],"urlFilters":[{"enabled":true,"urlRegex":".*://你的github反向代理域名/.*"},{"enabled":true,"urlRegex":".*://github.com/.*"}],"shortTitle":"1"}]
    ```
 
 将以上配置导入import不会导入看下文官方文档
@@ -45,7 +45,7 @@
 
 | https://github.com/(.*) |
 | ----------------------- |
-| https://g.shuia.tk/$1   |
+| 你的github反向代理域名/$1   |
 
 **URL filters配置**
 
